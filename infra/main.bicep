@@ -68,7 +68,7 @@ resource postgres 'Microsoft.DBforPostgreSQL/flexibleServers@2023-12-01-preview'
     version: '16'
     authConfig: {
       activeDirectoryAuth: 'Disabled'
-      passwordAuth: 'Enabled'
+      passwordAuth: 'Enabled' // pragma: allowlist secret - auth mode flag, not a credential
     }
     storage: {
       storageSizeGB: 32
